@@ -9,18 +9,15 @@ git clone [https://github.com/YOUR_USERNAME/dna-toolkit-demo.git](https://github
 cd dna-toolkit-demo
 ```
 
-### 2. Set Up Your Environment
-It is best practice to use a virtual environment so you don't mess up your system Python.
+### 2. Set Up Your Conda Environment
+Using a virtual environment ensures that your bioinformatics tools and Python versions don't conflict with other projects.
 
 ```bash
-# Create the environment
-python -m venv venv
+# Create a new environment named 'bio-env' with Python 3.10
+conda create --name bio-env python=3.10 -y
 
-# Activate it
-# On Windows:
-venv\Scripts\activate
-# On Mac/Linux:
-source venv/bin/activate
+# Activate the environment
+conda activate bio-env
 ```
 
 ### 3. Install Requirements
